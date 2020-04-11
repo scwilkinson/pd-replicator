@@ -10,7 +10,6 @@ setuptools.setup(
     author_email="hello@samwilkinson.io",
     description="Copy a pandas DataFrame with one click",
     long_description=long_description,
-    long_description_content_type="text/markdown",
     url="https://github.com/scwilkinson/pd-replicator",
     packages=setuptools.find_packages(),
     classifiers=[
