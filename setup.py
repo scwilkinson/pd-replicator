@@ -1,15 +1,12 @@
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
-
 setuptools.setup(
     name="pd-replicator",
     version="0.0.1",
     author="Sam Wilkinson",
     author_email="hello@samwilkinson.io",
     description="Copy a pandas DataFrame to the clipboard with one click",
-    long_description=long_description,
+    long_description="Copy a pandas DataFrame to the clipboard with one click",
     url="https://github.com/scwilkinson/pd-replicator",
     packages=setuptools.find_packages(),
     classifiers=[
