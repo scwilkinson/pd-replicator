@@ -1,4 +1,6 @@
 # pd-replicator
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.org/project/pd-replicator/) [![PyPI version pd-replicator](https://badge.fury.io/py/ansicolortags.svg)](https://pypi.org/project/pd-replicator/) [![GPL Licence](https://badges.frapsoft.com/os/gpl/gpl.svg?v=103)](https://opensource.org/licenses/GPL-3.0/)
+
 Copy a pandas DataFrame to the clipboard with one click
 
 ![Jupyter Demo](images/jupyter-demo.png)
