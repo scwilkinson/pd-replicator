@@ -26,11 +26,11 @@ To use with JupyterLab, an additional step is required:
 
 ## Usage
 
-### Enabling the Copy Button
-
 `pd-replicator` can be used in classic Jupyter, JupyterLab, and Google Colaboratory. 
 
 It can be used on both local and remotely hosted instances (such as AWS SageMaker or JupyterHub).
+
+### Enabling the Copy Button
 
 Wrap `replicator()` around any `pandas` DataFrame/Series to display the replicator copy button above the DataFrame/Series:
 
