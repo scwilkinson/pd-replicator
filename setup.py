@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Sam Wilkinson",
     author_email="hello@samwilkinson.io",
-    description="Copy a pandas DataFrame with one click",
+    description="Copy a pandas DataFrame to the clipboard with one click",
     long_description=long_description,
     url="https://github.com/scwilkinson/pd-replicator",
     packages=setuptools.find_packages(),
