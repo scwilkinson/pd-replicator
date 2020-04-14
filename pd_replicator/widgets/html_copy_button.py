@@ -21,7 +21,7 @@ class HtmlCopyButton(object):
             )
 
     def get_widget(self):
-        self.dropdown = ipywidgets.Dropdown(
+        self.dropdown=ipywidgets.Dropdown(
             options=list(DROPDOWN_MAP.keys()),
             value=list(DROPDOWN_MAP.keys())[0],
             disabled=False,
@@ -30,13 +30,16 @@ class HtmlCopyButton(object):
 
         display(HTML(SCRIPT_HTML))
 
-        self.copy_buttons = {key: self._get_html_button(value["index"], value["header"]) for key, value in DROPDOWN_MAP.items()}
-        self.current_copy_button = ipywidgets.HBox(children=[self.copy_buttons[self.dropdown.value]])
+        self.copy_buttons={key: self._get_html_button(value["index"], value["header"]) for key, value in DROPDOWN_MAP.items()}
+        self.current_copy_button=ipywidgets.HBox(children=[self.copy_buttons[self.dropdown.value]])
 
         return ipywidgets.HBox([self.current_copy_button, self.dropdown])
-    
+
     def _on_dropdown_change(self, dropdown_key):
-        self.current_copy_button.children = [self.copy_buttons[dropdown_key.new]]
+        self.current_copy_button.children=[self.copy_buttons[dropdown_key.new]]
 
     def _get_html_button(self, index, header):
-        return ipywidgets.HTML(BUTTON_HTML.format(self.input_data.to_csv(index=index, header=header)))
+        if self.input_type == pd.core.frame.DataFrame:
+            return ipywidgets.HTML(BUTTON_HTML.format(self.input_data.to_csv(index=index, header=header, sep='\t')))
+        else:
+            return ipywidgets.HTML(BUTTON_HTML.format(pd.DataFrame(self.input_data).to_csv(index=index, header=header, sep='\t')))
