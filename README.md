@@ -1,5 +1,5 @@
 # pd-replicator
-Copy a pandas DataFrame with one click
+Copy a pandas DataFrame to the clipboard with one click
 
 ![Jupyter Demo](images/jupyter-demo.png)
 
