@@ -1,5 +1,7 @@
 # pd-replicator
-[![PyPI Package Version](https://img.shields.io/pypi/v/pd-replicator?color=green)](https://pypi.org/project/pd-replicator/) ![GPL Licence](https://img.shields.io/github/license/scwilkinson/pd-replicator)
+[![PyPI Package Version](https://img.shields.io/pypi/v/pd-replicator?color=green)](https://pypi.org/project/pd-replicator)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/pd-replicator?color=blue)](https://pypi.org/project/pd-replicator/) 
+[![Awesome Jupyter](https://awesome.re/mentioned-badge.svg)](https://github.com/markusschanta/awesome-jupyter#readme)
 
 Copy a pandas DataFrame to the clipboard with one click
 
